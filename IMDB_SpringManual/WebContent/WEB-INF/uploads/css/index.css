@@ -1,0 +1,70 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
+
+.navbar-brand {
+  font-family: 'Mate SC', serif;
+  font-size: 2rem; }
+
+.nav-link {
+  font-family: 'Mate SC', serif;
+  font-weight: bold; }
+
+.main {
+  background-image: url("../images/top-view-movie-reels-with-copy-space.jpg");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: white; }
+
+.heading-primary--main {
+  display: block; }
+
+.heading-primary--sub {
+  display: block;
+  text-align: center; }
+
+.sideimage {
+  background-image: linear-gradient(to right, rgba(85, 197, 122, 0.801), rgba(40, 180, 133, 0.801));
+  height: 120vh; }
+
+.brandname {
+  font-family: 'Monoton', cursive;
+  font-size: 2rem;
+  color: black; }
+
+@media (max-width: 767.98px) {
+  h1 {
+    color: black; }
+  .sideimage {
+    height: 200vh; }
+  .heading {
+    background-color: whitesmoke; }
+  .heading-primary--main {
+    text-align: center;
+    background-color: whitesmoke;
+    font-size: 1.5rem; }
+  .heading-primary--sub {
+    font-size: 1.5rem; }
+  .sideimage--camera {
+    width: 10px; } }
+
+@media (max-width: 1199.98px) {
+  h1 {
+    color: black; }
+  .main {
+    display: flex; }
+  .heading {
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center; }
+  .heading-primary--main {
+    text-align: center;
+    background-color: whitesmoke; } }
