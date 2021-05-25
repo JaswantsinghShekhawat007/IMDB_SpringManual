@@ -1,0 +1,16 @@
+create database imdbdb;
+
+use imdbdb;
+
+create table userdata(userid varchar(30) primary key,pswd varchar(20) not null,name varchar(50),email varchar(50) unique,mobileno varchar(12) not null,secquestion varchar(100),secans varchar(100),joindt date not null,dob date not null,gender varchar(12) not null);
+
+create table films(filmid varchar(15) primary key,filmname varchar(60) not null,language varchar(20) not null,country varchar(25) not null,category varchar(20) not null,relyear date not null,adddate date not null,certificate varchar(20) not null,director varchar(100) not null,actor varchar(60) not null,actress varchar(60) not null,music varchar(60) not null,platform varchar(60) not null,budget varchar(20) not null,collection varchar(20) not null,description varchar(10000) not null,youtubetraillink varchar(1000) not null);
+
+create table reviews(reviewid varchar(15) unique,filmid varchar(15),foreign key(filmid) references films(filmid),userid varchar(30),foreign key(userid) references userdata(userid),detailreview varchar(500),reviewdate date not null);
+
+create table likedislike(filmid varchar(15),foreign key(filmid) references films(filmid),userid varchar(30),foreign key(userid) references userdata(userid),conclusion int);
+
+
+
+
+insert into likedislike values("Pz8ZZa","Parag",1);
